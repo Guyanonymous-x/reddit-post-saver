@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Reddit Post Saver",
+  "version": "1.0",
+  "description": "Saves the titles and text of the posts you can see in a subreddit to a CSV file, paging down 25 times.",
+  "content_scripts": [
+    {
+      "matches": ["https://*.reddit.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
